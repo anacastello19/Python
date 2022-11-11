@@ -9,15 +9,15 @@ class FigurasGeometrica:
 
     @ancho.setter
     def ancho(self, ancho):
-        self._ancho=ancho\
+        self._ancho=ancho
 
     @property
     def alto(self):
-        return self._alto\
+        return self._alto
 
     @alto.setter
     def alto(self, alto):
-        self._alto=alto\
+        self._alto=alto
 
 
     def __str__(self):
