@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>430</y>
+      <w>320</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Monitor&gt;&gt;
+--
++contadorMonitor: int &lt;&lt;static&gt;&gt;
+-idMonitor: int
+-marca: String
+-tama:String
+--
++__str__()
++(Agregar los metodos get/set de cada atributo)
+--
+Responsabilidades
+-Crear objetos de tipo Monitor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>40</y>
+      <w>320</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Computadora&gt;&gt;
+--
++contador_computadora: int &lt;&lt;static&gt;&gt;
+-idComputadora: int
+-nombre: String
+-monitor: Monitor
+-teclado: Teclado
+-raton: Raton
+--
++__str__()
++(agregado los metodos get/set de cada atributo)
+--
+Responsibilities
+-Crear objetos de tipo Computadora</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>470</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Raton&gt;&gt;
+--
++contadorRatones: int &lt;&lt;Static&gt;&gt;
+-idRaton: int
+--
++__stc__()
+--
+Responsibilities
+--Crear objetos de tipo raton</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>40</y>
+      <w>350</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Orden&gt;&gt;
+--
++contadorOrden: int &lt;&lt;static&gt;&gt;
+-idOrden:int
+-computadora: List &lt;computadora&gt;
+--
++agragarComputadora(computadora)
++__str__()
++(Agragar los metodos get/ser de cada atributo)
+--
+Responsabilidades
+Alamacenar en ua lista los objetos tipo computadora</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>280</y>
+      <w>310</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;DespositivosEntrada&gt;&gt;
+--
+#tipoEntrada: String
+#marca: String
+--
++__str__()
++(Agregar los metodos get/set para los atributos)
+
+--
+Responsibilities
+-Crear objetos de tipo DispositivosEntrada</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>30</y>
+      <w>1000</w>
+      <h>600</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>0</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>mundo_PC</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>480</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Teclado&gt;&gt;
+--
+-idTeclado: int
+--
++__str__()
+--
+Responsibilities
+-- Crear objetos de tipo Teclado</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>250</y>
+      <w>30</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>120</y>
+      <w>260</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;240.0;10.0</additional_attributes>
+  </element>
+</diagram>
