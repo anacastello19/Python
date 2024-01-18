@@ -24,7 +24,7 @@ else:
 '''
 listas
 '''
-frutas=['manzana', 'pera', ' banana']
+frutas=['manzana', 'pera', 'banana']
 for fruta in frutas:
     print(fruta)
     
@@ -34,3 +34,4 @@ print(len(frutas))
 frutas.append('frutilla')
 #Insertamos un elemento donde deseemos que este
 frutas.insert(1,'naranja')
+print(frutas)
